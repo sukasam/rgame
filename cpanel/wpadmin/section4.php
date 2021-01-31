@@ -53,8 +53,8 @@ if (isset($_GET['action']) && $_GET['action'] === 'submit') {
         $imgCon = $g_img_old;
     }
 
-    $sqlu2 = "update section4 set g_title=?,g_img=?,g_link=?, g_background=? where sid=?";
-    $values2 = array($g_title, $imgCon, $g_link, $imgBackground, $sid);
+    $sqlu2 = "update section4 set g_title=?,g_img=?,g_link=?, g_detail=?, g_background=? where sid=?";
+    $values2 = array($g_title, $imgCon, $g_link, $g_detail, $imgBackground, $sid);
     $model->doUpdate($sqlu2, $values2);
 
     header("Location:section4.php");

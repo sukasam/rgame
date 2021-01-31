@@ -597,8 +597,8 @@ body {
 }
 
 .logo-nav > img {
-    width: 100px;
-    height: 72px;
+    width: 67px;
+    /* height: 72px; */
 }
 
 @keyframes pulse {
